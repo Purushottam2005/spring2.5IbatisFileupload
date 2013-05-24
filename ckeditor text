@@ -1,0 +1,4 @@
+
+<script type='text/javascript'>
+  window.parent.CKEDITOR.tools.callFunction(2, "${_file_upload_path_}","<s:message code="${_file_upload_result_}"/>");
+</script>
