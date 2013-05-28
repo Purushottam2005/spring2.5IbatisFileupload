@@ -1,11 +1,9 @@
 package com.lp.repository;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.UUID;
 
-import org.apache.catalina.connector.Request;
 import org.apache.log4j.Logger;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -24,7 +22,7 @@ public class FileRepository {
 		}
 	}
 
-	public String saveFile(MultipartFile sourcefile,Request request) throws IOException {
+	public String saveFile(MultipartFile sourcefile) throws IOException {
 
 		logger.info("fileName ing................." + sourcefile.getOriginalFilename());
 		logger.info("fileName ing................." + sourcefile.getName());
